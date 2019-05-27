@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculator 2</title>
+    <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+    <style>
+body {
+  background-color: #2ECC71;
+}
+div {
+  border-bottom: 2px solid #2ECC71;
+  border-color: #2ECC71;
+
+}
+
+.style-calc {
+  background-color: #FFF933;
+  font-family: Geneva, Helvetica, sans-serif;
+  margin: 2px 2px 2px 2px;
+  width: 40%;
+}
+        input, select {
+            padding: 7px 13px;
+            font-size: 14px;
+            margin-bottom: 14px;
+            border: black 2px solid;
+            text-align: center;
+        }
+        input[type='text'] {
+            width: 273px;
+            height: 29px;
+        }
+        select, input[type='submit'] {
+            width: 299px;
+            height: 43px;
+        }
+        select {
+            text-indent: 131px;
+        }
+    </style>
+    <script>
+        var calc;
+        var left;
+        var right;
+        var op;
+        $(document).ready(function(){
+            calc = $('#calc');
+            left = $('#left');
+            right = $('#right');
+            op = $('#op');
+            calc.submit(submit);
+            setInterval("alert('Please, use me...')", 30000);
+        });
+        function numIsValid(num0, num1) {
+            return num0 == parseInt(num0, 10) && num0 >= 0 && num1 == parseInt(num1, 10) && num1 >= 0;
+        }
+        function submit(event) {
+            event.preventDefault();
+            var num0 = Number(left.val());
+            var num1 = Number(right.val());
+            if (!numIsValid(left.val(), right.val())) {
+                alert("Error :(");
+                return false;
+            }
+            switch (op.val())
+            {
+                case ('add'):
+                    result(num0 + num1);
+                    break;
+                case ('mul'):
+                    result(num0 * num1);
+                    break;
+                case ('div'):
+                    if (num1 === 0)
+                        result("It’s over 9000!");
+                    else
+                        result(num0 / num1);
+                    break;
+                case ('mod'):
+                    if (num1 === 0)
+                        result("It’s over 9000!");
+                    else
+                        result(num0 / num1);
+                    break;
+                case ('min'):
+                    result(num0 - num1);
+                    break;
+                default:
+                    result("operation not found");
+            }
+        }
+        function result(equals)
+        {
+            console.log(equals);
+            alert(equals);
+        }
+    </script>
+</head>
+<body>
+    <div class=".style-calc">
+        <div class=".style-calc">
+            <div class=".style-calc"></div>
+            <form action="" id="calc">
+                <input type="text" id="left">
+                <select id="op">
+                    <option value="add">+</option>
+                    <option value="min">-</option>
+                    <option value="mul">*</option>
+                    <option value="div">/</option>
+                    <option value="mod">%</option>
+                </select>
+                <input type="text" id="right">
+                <input type="submit" id="submit" value="Try me!">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

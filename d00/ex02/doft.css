@@ -1,0 +1,119 @@
+body {
+    background-color: #505050;
+    margin: 18px 0 0 8px;}
+.main {
+    margin: 0 auto;
+    width: 1420px;}
+.head {
+    height: 137px;
+    width: 1420px;
+    position: relative;}
+.head, .left_col, .right_col, .mid_col, .green_box {
+    border-radius: 9px;
+    box-shadow: 10px 10px 10px #000000;
+    background-color: #909090;}
+.head img.day_img {
+    height: 110px;
+    margin: 10px 0 0 10px;}
+.head img.glass {
+    position: absolute;
+    top: 10px;
+    right: 30px;}
+.head img.cross, .head img.renew {
+    position: absolute;
+    right: 10px;
+    height: 20px;
+    width: 20px;}
+.apple {
+    width: 187px;
+    height: 147px;
+    position: absolute;
+    margin: -260px 0px 0px 800px;
+    z-index: 100;}
+.head .cross {
+    bottom: 10px;}
+.head .renew {
+    top: 10px;}
+.left_col{
+    width: 108px;
+    height: 410px;
+    float: left;
+    margin: 20px 0 0 30px;
+    padding: 15px 0 0 32px;}
+.left_col img {
+    width: 70px;
+    margin-bottom: 6px;}
+.right_col img {
+    width: 70px;
+    margin-bottom: 6px;}
+.left_col img.selected {
+    border: 5px solid red;
+    margin: -5px 0 1px -5px;
+    border-radius: 5px;}
+.ikea {
+    width: 109px;
+    height: 210px;
+    position: absolute;
+    margin: -260px 0px 0px 350px;
+    z-index: 101;}
+.right_col{
+    width: 105px;
+    height: 410px;
+    float: left;
+    margin: 20px 0 0 30px;
+    padding: 15px 0 0 35px;}
+.right_col .brick {
+    background-image: url('resources/brick.jpg');
+    width: 120px;
+    height: 70px;
+    margin: 10px 0 0 -25px;}
+.right_col img {
+    width: 70px;
+    margin-bottom: 6px;}
+.mid_col {
+    margin: 20px 0 0 30px;
+    width: 1020px;
+    height: 582px;
+    float: left;
+    position: relative;}
+.mid_col img {
+    margin: 10px;
+    width: 1000px;
+    height: 562px;}
+.green_box {
+    background-color: #88ff89;
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    bottom: -94px;
+    left: -245px;
+    padding: 10px;
+    font-family: arial;
+    font-size: 16px;
+    font-stretch: expanded !important;
+    letter-spacing: 1px;
+    font-weight: 300;}
+.green_box span.large {
+    font-family: Times;
+    font-size: 31px;}
+.green_box span.red_dim {
+    text-shadow: 5px 4px 5px red;}
+.green_box form {
+    height: 22px;}
+.green_box form input[type="text"] {
+    margin-left: 2px;
+    width: 376px;
+    border: 2px solid #9d969d;
+    border-bottom-color: #eeeeee;
+    border-right-color: #eeeeee;
+    height: 15px;}
+.green_box form input[type="submit"] {
+    border: 1px solid #a8a4a5;
+    border-radius: 1px;
+    background-color: #f4eff3;
+    background: #0079FF;
+    margin-left: 4px;
+    height: 22px;
+    font-size:12px;
+    letter-spacing: 1px;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4eff3), to(#dcdcdc));}

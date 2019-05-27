@@ -1,0 +1,26 @@
+0;3;Anchor small;140;Additional iron anchor for light boats, 6 kg;small-anchor.jpg
+1;1;Cord;100;Dynamic cord for anchors, 10 mm, 50 m reel;cord.jpg
+2;1:#:3:#:4;Paracord;8;Multipurpose parachute cord for ultimate survivors! 30 m bundle;paracord.jpg
+3;1;Bungee;200;Awesome stretching rope, 12 mm, 50 m reel;bungee.jpg
+4;1;Floating rope;30;Emergency floating rope for throwing, 6 mm, 15 m bundle;floating.jpg
+5;1:#:4;Cruising line;150;Low-cost but durable static rope for cruising yachts, 10 mm, 50 m reel;cruising.jpg
+6;1:#:2:#:4;Racing line;250;The best rope for racing yachts. Made for winners! 10 mm, 50 m reel;race-line.jpg
+7;0;Genoa sail;600;Big italian head sail, 20 m2;genoa.jpg
+8;0;Staysail;390;Basic head sail for small yacht, 14 m2;staysail.jpg
+9;0;Main sail;500;Basic main sail for medium yachts, 18 m2;main-sail.jpg
+10;0:#:2:#:4;Main sail RS;800;Racing sail for big sportive yachts, 20 m2;main-rs.jpg
+11;0;Spinnaker;550;Classical spinnaker, 18 m2;spinnaker.jpg
+12;0:#:2:#:4;X-cut sail;700;Big high-end sail for racing, 19 m2;x-cut.jpg
+13;0;Storm staysail;450;Affordable small sail for stormy weather, 11 m2;storm.jpg
+14;2:#:3:#:4;Racing watch;290;Luxury and functional sportive watch;watch.jpg
+15;2:#:3;Compass statical RS;220;Highly accurate racing compass;compass-rs.jpg
+16;2:#:3;Speedometer RS;250;Highly accurate speedometer for yacht racing;speed-rs.jpg
+17;3;Tachometer;200;Standard nautical tachometer;tacho.jpg
+18;3;Speedometer;150;Standard nautical speedtometer;speed.jpg
+19;3;Nautical watch;140;Classical watch for yatching;watch-class.jpg
+20;3;Compass classical;80;Standard statical compass;compass.jpg
+21;3:#:4;Compass small mobile;12;Pocket version of nautical compass;compass-small.jpg
+22;3:#:4;Anchor big;450;Heavy stailness anchor, 18 kg;anchor-big.jpg
+22;4;Anchor big;450;Heavy stailness anchor, 18 kg;anchor-big.jpg
+17;4;Tachometer;200;Standard nautical tachometer;tacho.jpg
+18;4;Speedometer;150;Standard nautical speedtometer;speed.jpg

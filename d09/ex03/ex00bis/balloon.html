@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+	<title>air balloon 2</title>
+<style>
+
+div {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+#balloon {
+	background-color: red;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+	var dmc = 200;
+	var paint = ["red", "green", "blue"];
+	var itr = 0;
+	$(document).ready(function() {
+		$('#balloon').click(redmc);
+		$('#balloon').mouseleave(mouseleave);
+	})
+	function redmc() {
+		if (dmc > 420)
+		{
+			dmc = 200;
+		}
+		else
+		{
+			dmc += 10;
+		}
+		if (itr < 2)
+		{
+			itr++;
+		}
+		else
+		{
+			itr = 0;
+		}
+		$('#balloon').css('width', dmc);
+		$('#balloon').css('height', dmc);
+		$('#balloon').css('backgroundColor', paint[itr]);
+	}
+	function mouseleave() {
+		if (dmc > 200)
+		{
+			dmc -= 5;
+			if (itr > 0)
+			{
+				itr--;
+			}
+			else
+			{
+				itr = 2;
+			}
+			$('#balloon').css('width', dmc);
+			$('#balloon').css('height', dmc);
+			$('#balloon').css('backgroundColor', paint[itr]);
+		}
+	}
+</script>
+</head>
+<body>
+<div id="balloon"></div>
+</body>
+</html>

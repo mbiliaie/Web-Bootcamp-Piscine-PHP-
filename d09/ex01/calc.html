@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.style-calc {
+  background-color: #FFF933;
+  font-family: Geneva, Helvetica, sans-serif;
+  margin: 2px 2px 2px 2px;
+  width: 40%;
+}
+
+div {
+  border-bottom: 2px solid #2ECC71;
+  border-color: #2ECC71;
+
+}
+body {
+  background-color: #2ECC71;
+}
+</style>
+
+<script>
+  window.onload = function() {
+    setTimeout(Remind, 30000);
+  }
+  function Remind() {
+    alert('Please, use me...');
+    setTimeout(Remind, 30000);
+  }
+  function Result(form) {
+    var op = form.elements["op"].value;
+    var num0 = form.elements["num0"].value;
+    var num1 = form.elements["num1"].value;
+    if (!isInt(num0) || !isInt(num1))
+    {
+      alert('Error :(');
+    }
+    else
+    {
+      num0 = parseInt(num0, 10);
+      num1 = parseInt(num1, 10);       
+      if (num0 > 0 && num1 > 0)
+      {
+        if (op == "+")
+          output(num0 + num1);
+        else if (op == "-")
+          output(num0 - num1);
+        else if (op == "*")
+          output(num0 * num1);
+        else if (op == "/")
+        {
+          if (num1 == 0)
+            output('It’s over 9000!');
+          else
+            output(num0 / num1);
+        }
+        else if (op == "%")
+        {
+          if (num1 == 0)
+            output('It’s over 9000!');
+          else
+            output(num0 % num1);
+        }
+      }
+      else
+         alert('Error :(');
+    }
+  }
+  function isInt(value) {
+    return (!isNaN(value) && parseInt(Number(value)) == value && !isNaN(parseInt(value, 10)));
+  }
+  function output(value) {
+    console.log(value);
+    alert(value);
+  }
+</script>
+</head>
+<body>
+<form class ="style-calc" onsubmit="Result(this)" action="">
+  <input class ="style-calc" id="num0" type="text">
+  <select name="op" type="text">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+    <option value="%">%</option>
+  </select>
+  <input class ="style-calc" id="num1" type="text">
+  <button class ="style-calc" id="submit" name="submit" value="OK">Try me!</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.main_heading{
+    text-align: left;
+    margin-left: 10px;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 35px;
+    color: #000080;
+    text-decoration: underline;
+}
+.general_table{
+    width: 190px;
+    margin-top: 8px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+input{
+    display: none;
+}
+label{
+    padding-left: 5px;
+    display: block;
+    position: relative;
+    height: 42px;
+    text-align: left;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: bold;
+    cursor: zoom-in;
+    color: #000080;
+    background: #ccc linear-gradient(to top, #FFFF00, #00FF00);
+    border: 2px solid #008000;
+    border-bottom: 1px solid #008000;
+}
+label:hover{
+    color: blue;
+    background: #ccc linear-gradient(to bottom, #FFFF00, #00FF00);
+
+}
+input:checked + label{
+    color: blue;
+}
+input:checked + label:hover{
+    text-decoration: underline;
+    cursor: zoom-out;
+}
+.general_table div div{
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    height: 0;
+    transition: height 0.6s ease-in-out;
+}
+input:checked ~ .p1{
+    height: calc(90px);
+    transition: height 0.6s ease-in-out;
+}
+input:checked ~ .p2{
+    height: calc(150px);
+    transition: height 0.6s ease-in-out;
+}
+input:checked ~ .p3{
+    height: calc(120px);
+    transition: height 0.6s ease-in-out;
+}
+
+input:checked ~ .p4{
+    height: calc(60px);
+    transition: height 0.6s ease-in-out;
+}
+input:checked ~ .p5{
+    height: calc(120px);
+    transition: height 0.6s ease-in-out;
+}
+a {
+    display: block;
+    height: 30px;
+    background-color: #ffffff;
+    line-height: 28px;
+    text-align: left;
+    padding: 5px;
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    border-left: 1px solid #008000;
+    border-right: 1px solid #008000;
+    color: #333;
+    text-decoration: none;
+    border-top: 1px solid #008000;
+}
+a:hover{
+    font-size: 16px;
+    font-weight: bold;
+    -webkit-transition: 0.6s linear;
+    -moz-transition: 0.6s linear;
+    -ms-transition: 0.6s linear;
+    -o-transition: 0.6s linear;
+    transition: 0.6s linear;
+}
+.bot{
+    border-bottom: 2px solid #008000;
+}

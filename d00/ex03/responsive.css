@@ -1,0 +1,117 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: blue;
+}
+
+h1 {
+    color: #66ca71;
+    font-size: 3vmin;
+}
+.image-border {
+    width: 5.1vw;
+}
+.table {
+    min-width: 2.6vw;
+    display: table;
+    background: #FFFFFF;
+    width: 99vw;
+}
+.row {
+    background: #FFFFFF;
+    border: 0.1vw solid black;
+    margin: 0.21vw;
+    height: 5.3vw;
+    display: block;
+}
+.col {
+    display: inline-block;
+    border: 0.1vw solid black;
+    width: 4.35vw;
+    margin: 0.21vw;
+    float: left;
+}
+.col_3pl {
+    display: inline-block;
+    border: 0.1vw solid black;
+    width: 12.48vw;
+    margin: 0.1vw;
+    float: left;
+}
+.col_dbl {
+    display: inline-block;
+    border: 0.1vw solid black;
+    width: 4.36vw;
+    margin: 0.21vw;
+    float: left;
+}
+.col_white {
+    display: inline-block;
+    border: 0.1vw solid white;
+    width: 4.35vw;
+    margin: 0.21vw;
+    float: left;
+}
+.cell_top {
+    text-align: right;
+    font-size: 0.5vw;
+    border-color: transparent;
+}
+.cell_bot {
+    text-align: left;
+    font-size: 0.5vw;;
+    border-color: transparent;
+}
+.cell_mid {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.9vmin;
+    border-color: transparent;
+}
+.cell_mid_h {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vw;
+    border-color: transparent;
+    height: 3.7vw;
+}
+.cell_mid_s {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1vw;
+    border-color: transparent;
+    height: 1.05vw;
+}
+.cell_mid_dbl {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vmin;
+    border-color: transparent;
+    height: 3.7vw;
+}
+
+.cell_3pl {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1vw;
+    border-color: transparent;
+    height: 2.3vw;
+}
+.norm_font {
+    text-align: left;
+    font-size: 1vmin;
+}
+.purple { background-color: #f19fcb;}
+.viol { background-color: #f3c1f9;}
+.pink { background-color: #f5c3c1;}
+.green { background-color: #66ca71;}
+.orange { background-color: #ed6f6b;}
+.dark_yellow { background-color: #ffdd99;}
+.yellow { background-color: #f1fc9d;}
+.dirt_green { background-color: #cdcd9f;}
+.blue { background-color: #cdfdfe;}
+.dark_grey { background-color: #cccccc;}
+.pink { background-color: #ffb6c1;}
+.grey { background-color: #e8e8e8;}
+

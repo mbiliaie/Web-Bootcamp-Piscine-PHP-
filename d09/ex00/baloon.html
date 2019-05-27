@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>air balloon</title>
+	<style>
+div {
+	border-radius: 50%;
+	background-color: red;
+	width: 200px;
+	height: 200px;
+}
+	</style>
+</head>
+<body>
+	<div id="ab">
+	</div>
+	<script>
+	     var myDiv = document.getElementById("ab"); 
+	     myDiv.addEventListener("click", zoomInColor, false);
+	     myDiv.addEventListener("mouseout", zoomOutColor, false);
+
+	     function zoomInColor()
+	     {
+	     	var md = document.getElementById("ab");
+	     	md.style.height = md.offsetHeight+10+'px';
+	     	md.style.width = md.offsetWidth+10+'px';
+		    if (md.style.backgroundColor == 'red' || md.style.backgroundColor == '')
+		   		md.style.backgroundColor = 'green';
+		   	else if (md.style.backgroundColor == 'green')
+		   		md.style.backgroundColor = 'blue';
+		   	else
+				md.style.backgroundColor = 'red';
+		    while (md.style.width >'420px')
+		    {
+		    	md.style.height = '200px';
+		    	md.style.width = '200px';
+		    	break;
+		    }
+	     }
+	     function zoomOutColor()
+	     {
+	     	var md = document.getElementById("ab");
+	     	while (md.style.width > '200px')
+	     	{	
+	     		md.style.height = md.offsetHeight-5+'px';
+	     		md.style.width = md.offsetWidth-5+'px';
+	     		break;
+	     	}
+		    if (md.style.backgroundColor == 'red' || md.style.backgroundColor == '')
+				md.style.backgroundColor = 'blue';
+		    else if (md.style.backgroundColor == 'blue')
+				md.style.backgroundColor = 'green';
+		    else
+				md.style.backgroundColor = 'red';
+	     }
+	</script>
+</body>
+</html>
